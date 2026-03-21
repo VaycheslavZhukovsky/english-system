@@ -1,0 +1,5 @@
+# English System — Python 3.10+
+# Основной функционал: stdlib only
+# Аудио-тренажёр: gtts (американский английский), pydub (5 сек тишины), ffmpeg для mp3
+gtts>=2.4.0
+pydub>=0.25.0

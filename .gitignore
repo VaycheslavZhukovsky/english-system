@@ -1,0 +1,10 @@
+.idea/
+.venv/
+data/
+*.db
+__pycache__/
+*.pyc
+.cursor
+
+
+
