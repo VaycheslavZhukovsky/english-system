@@ -1,0 +1,51 @@
+{
+"sentences": {
+
+"What are the SOLID principles in software development?":
+"Что такое принципы SOLID в разработке программного обеспечения?",
+
+"SOLID is a set of five design principles that help developers write clean, maintainable, and scalable code. These principles are widely used in object-oriented programming. The five principles are Single Responsibility Principle, Open-Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, and Dependency Inversion Principle. Following SOLID principles helps reduce code complexity. It also makes systems easier to maintain and extend. In large systems such as data platforms, these principles help build flexible architectures.":
+"SOLID — это набор из пяти принципов проектирования, которые помогают разработчикам писать чистый, поддерживаемый и масштабируемый код. Эти принципы широко используются в объектно-ориентированном программировании. Пять принципов — это Single Responsibility Principle, Open-Closed Principle, Liskov Substitution Principle, Interface Segregation Principle и Dependency Inversion Principle. Следование принципам SOLID помогает уменьшить сложность кода. Это также делает системы проще для поддержки и расширения. В больших системах, таких как платформы обработки данных, эти принципы помогают строить гибкую архитектуру.",
+
+
+
+"What is the Single Responsibility Principle?":
+"Что такое принцип единственной ответственности?",
+
+"The Single Responsibility Principle states that a class should have only one reason to change. This means a class should have only one responsibility or job. If a class handles multiple tasks, it becomes harder to maintain and modify. By separating responsibilities, the code becomes more modular and easier to understand. This principle also improves testing because each component has a clear purpose. In data engineering systems, it is common to separate data ingestion, transformation, and storage into different components.":
+"Принцип единственной ответственности говорит о том, что класс должен иметь только одну причину для изменения. Это означает, что класс должен выполнять только одну задачу. Если класс выполняет несколько задач, его становится сложнее поддерживать и изменять. Разделяя ответственность, код становится более модульным и понятным. Этот принцип также улучшает тестирование, потому что каждый компонент имеет чёткую цель. В системах дата-инженерии часто разделяют загрузку данных, трансформацию и хранение на разные компоненты.",
+
+
+
+"What is the Open-Closed Principle?":
+"Что такое принцип открытости-закрытости?",
+
+"The Open-Closed Principle states that software entities should be open for extension but closed for modification. This means we should be able to add new functionality without changing existing code. One common way to achieve this is by using inheritance or interfaces. This approach reduces the risk of breaking existing functionality. It also makes systems easier to extend when new requirements appear. In large data systems, this helps developers add new processing logic without rewriting existing components.":
+"Принцип открытости-закрытости говорит о том, что программные сущности должны быть открыты для расширения, но закрыты для изменения. Это означает, что новую функциональность можно добавлять без изменения существующего кода. Один из распространённых способов достичь этого — использовать наследование или интерфейсы. Такой подход снижает риск поломки существующей функциональности. Он также упрощает расширение системы при появлении новых требований. В больших системах обработки данных это помогает добавлять новую логику обработки без переписывания существующих компонентов.",
+
+
+
+"What is the Liskov Substitution Principle?":
+"Что такое принцип подстановки Лисков?",
+
+"The Liskov Substitution Principle states that objects of a subclass should be replaceable with objects of the parent class without breaking the program. This means derived classes must behave correctly when used instead of their base classes. If a subclass changes expected behavior, it can cause errors in the system. Following this principle ensures consistent and predictable behavior. It also improves code reliability and maintainability. In large systems, violating this principle can lead to subtle and difficult bugs.":
+"Принцип подстановки Лисков говорит о том, что объекты дочернего класса должны быть взаимозаменяемы с объектами родительского класса без нарушения работы программы. Это означает, что дочерние классы должны корректно работать вместо базовых классов. Если подкласс изменяет ожидаемое поведение, это может вызвать ошибки в системе. Следование этому принципу обеспечивает предсказуемое и стабильное поведение программы. Это также улучшает надёжность и поддержку кода. В больших системах нарушение этого принципа может приводить к сложным и скрытым ошибкам.",
+
+
+
+"What is the Interface Segregation Principle?":
+"Что такое принцип разделения интерфейсов?",
+
+"The Interface Segregation Principle states that clients should not be forced to depend on interfaces they do not use. Instead of creating large interfaces with many methods, it is better to create smaller and more specific interfaces. This makes the system more flexible and easier to maintain. Classes only implement the functionality they actually need. This reduces unnecessary dependencies in the code. In large applications, this principle helps keep components independent.":
+"Принцип разделения интерфейсов говорит о том, что клиенты не должны зависеть от интерфейсов, которые они не используют. Вместо создания больших интерфейсов с множеством методов лучше создавать небольшие и специализированные интерфейсы. Это делает систему более гибкой и простой для поддержки. Классы реализуют только ту функциональность, которая им действительно нужна. Это уменьшает лишние зависимости в коде. В больших приложениях этот принцип помогает сохранять независимость компонентов.",
+
+
+
+"What is the Dependency Inversion Principle?":
+"Что такое принцип инверсии зависимостей?",
+
+"The Dependency Inversion Principle states that high-level modules should not depend on low-level modules. Both should depend on abstractions. This means we should use interfaces or abstract classes instead of concrete implementations. This approach reduces tight coupling between components. It also makes systems easier to test and extend. Dependency injection is often used to implement this principle. In data engineering platforms, this helps build flexible and modular pipelines.":
+"Принцип инверсии зависимостей говорит о том, что модули высокого уровня не должны зависеть от модулей низкого уровня. Оба должны зависеть от абстракций. Это означает, что следует использовать интерфейсы или абстрактные классы вместо конкретных реализаций. Такой подход уменьшает сильную связанность компонентов. Он также делает систему проще для тестирования и расширения. Для реализации этого принципа часто используется dependency injection. В платформах дата-инженерии это помогает строить гибкие и модульные пайплайны."
+
+}
+}

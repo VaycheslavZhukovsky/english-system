@@ -1,0 +1,41 @@
+{
+"sentences": {
+"What is list comprehension in Python?":
+"Что такое list comprehension в Python?",
+
+"List comprehension is a concise way to create lists in Python. It allows us to generate a new list by applying an expression to each element in an iterable. The syntax is shorter and often more readable than using a traditional loop. It usually follows the pattern: expression for item in iterable. List comprehensions are widely used in Python because they make code cleaner and faster. In data engineering, they are often used for quick data transformations.":
+"List comprehension — это короткий и удобный способ создания списков в Python. Он позволяет создавать новый список, применяя выражение к каждому элементу итерируемого объекта. Такой синтаксис короче и часто более читаемый, чем обычный цикл. Обычно используется структура: выражение for элемент in последовательность. List comprehension широко используется в Python, потому что делает код более чистым и быстрым. В дата-инженерии его часто применяют для быстрых трансформаций данных.",
+
+
+
+"How do you use a condition in list comprehension?":
+"Как использовать условие в list comprehension?",
+
+"A condition can be added to a list comprehension using an if statement at the end. This allows us to filter elements while creating the new list. Only elements that satisfy the condition will be included in the result. This makes the code more compact compared to using loops and conditional statements separately. It is very useful when we need to filter data quickly. In data processing tasks, this can help clean or select specific records.":
+"Условие можно добавить в list comprehension с помощью оператора if в конце выражения. Это позволяет фильтровать элементы во время создания нового списка. Только элементы, которые удовлетворяют условию, будут включены в результат. Такой подход делает код более компактным по сравнению с использованием циклов и условных операторов отдельно. Это очень полезно, когда нужно быстро отфильтровать данные. В задачах обработки данных это помогает очищать или выбирать нужные записи.",
+
+
+
+"What is dictionary comprehension in Python?":
+"Что такое dictionary comprehension в Python?",
+
+"Dictionary comprehension is a compact way to create dictionaries in Python. It works similarly to list comprehension but produces key-value pairs instead of list elements. The syntax usually follows the pattern: key expression, value expression, and an iterable. This approach allows developers to build dictionaries quickly and clearly. It is especially useful when transforming existing datasets into a dictionary format. In data engineering, dictionary comprehension can help build mappings or lookup tables.":
+"Dictionary comprehension — это компактный способ создания словарей в Python. Он работает похожим образом на list comprehension, но создаёт пары ключ-значение вместо элементов списка. Обычно используется структура: выражение для ключа, выражение для значения и итерируемый объект. Такой подход позволяет быстро и понятно создавать словари. Это особенно полезно при преобразовании существующих данных в формат словаря. В дата-инженерии dictionary comprehension может использоваться для создания маппингов или таблиц соответствия.",
+
+
+
+"What is set comprehension in Python?":
+"Что такое set comprehension в Python?",
+
+"Set comprehension is a way to create sets using a concise syntax similar to list comprehension. Instead of square brackets, it uses curly braces. The result is a set containing unique elements. This means duplicate values will automatically be removed. Set comprehension is useful when we want to transform data and ensure uniqueness at the same time. In data engineering tasks, this can help remove duplicate records or extract unique values.":
+"Set comprehension — это способ создания множеств с использованием короткого синтаксиса, похожего на list comprehension. Вместо квадратных скобок используются фигурные скобки. Результатом является множество, содержащее только уникальные элементы. Это означает, что повторяющиеся значения автоматически удаляются. Set comprehension полезен, когда нужно преобразовать данные и одновременно обеспечить их уникальность. В задачах дата-инженерии это может помочь удалить дубликаты или получить уникальные значения.",
+
+
+
+"What is nested list comprehension in Python?":
+"Что такое nested list comprehension в Python?",
+
+"Nested list comprehension means using multiple loops inside a single comprehension expression. It allows us to work with nested data structures such as lists of lists. Each loop processes one level of the structure. Although nested comprehensions are powerful, they can sometimes reduce readability if they become too complex. Developers should use them carefully and keep the code clear. In data engineering, nested comprehensions can help flatten nested datasets or process hierarchical data.":
+"Nested list comprehension означает использование нескольких циклов внутри одного выражения comprehension. Это позволяет работать с вложенными структурами данных, например списками списков. Каждый цикл обрабатывает один уровень структуры. Хотя такие выражения очень мощные, они могут ухудшить читаемость кода, если становятся слишком сложными. Поэтому разработчики должны использовать их аккуратно. В дата-инженерии nested comprehension может помочь преобразовывать вложенные данные или работать с иерархическими структурами."
+}
+}

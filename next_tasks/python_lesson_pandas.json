@@ -1,0 +1,67 @@
+{
+"sentences": {
+
+"What is pandas in Python?":
+"Что такое pandas в Python?",
+
+"Pandas is a powerful open-source library used for data manipulation and analysis in Python. It provides flexible and efficient data structures such as Series and DataFrame. Pandas is widely used in data science, data engineering, and analytics. It allows developers to clean, transform, and analyze large datasets. Many data processing tasks can be done with only a few lines of pandas code. In data engineering, pandas is often used for data exploration and transformation.":
+"Pandas — это мощная библиотека с открытым исходным кодом для обработки и анализа данных в Python. Она предоставляет гибкие и эффективные структуры данных, такие как Series и DataFrame. Pandas широко используется в data science, дата-инженерии и аналитике. Она позволяет разработчикам очищать, преобразовывать и анализировать большие наборы данных. Многие задачи обработки данных можно выполнить всего несколькими строками кода pandas. В дата-инженерии pandas часто используется для исследования и трансформации данных.",
+
+
+
+"What is a DataFrame in pandas?":
+"Что такое DataFrame в pandas?",
+
+"A DataFrame is the main data structure in pandas. It represents data in a tabular format similar to a spreadsheet or SQL table. A DataFrame has rows and columns, where each column can contain different data types. It allows easy filtering, grouping, and transformation of data. DataFrames are very convenient for data analysis tasks. In data engineering, they are often used for intermediate data processing before loading data into databases.":
+"DataFrame — это основная структура данных в pandas. Она представляет данные в табличном формате, похожем на электронную таблицу или SQL таблицу. DataFrame состоит из строк и колонок, где каждая колонка может содержать разные типы данных. Он позволяет легко фильтровать, группировать и преобразовывать данные. DataFrame очень удобен для анализа данных. В дата-инженерии он часто используется для промежуточной обработки данных перед загрузкой в базы данных.",
+
+
+
+"How do you read a CSV file using pandas?":
+"Как прочитать CSV файл с помощью pandas?",
+
+"A CSV file can be read using the read_csv() function in pandas. This function loads the data into a DataFrame. It automatically detects columns and data types in many cases. Developers can also specify options such as delimiter, encoding, or column names. Reading CSV files is a very common task in data processing pipelines. In data engineering, CSV files are often used for data exchange between systems.":
+"CSV файл можно прочитать с помощью функции read_csv() в pandas. Эта функция загружает данные в DataFrame. Во многих случаях она автоматически определяет колонки и типы данных. Разработчики также могут указать дополнительные параметры, например разделитель, кодировку или имена колонок. Чтение CSV файлов — очень распространённая задача в пайплайнах обработки данных. В дата-инженерии CSV часто используется для обмена данными между системами.",
+
+
+
+"How do you filter data in pandas?":
+"Как фильтровать данные в pandas?",
+
+"Filtering in pandas is usually done using boolean conditions. A condition is applied to a column, and the result is used to select rows. For example, we can filter rows where a value is greater than a specific number. This operation returns a new DataFrame containing only the selected rows. Filtering is very useful for data cleaning and analysis. In data engineering pipelines, filtering is often used to remove invalid or unnecessary records.":
+"Фильтрация в pandas обычно выполняется с помощью булевых условий. Условие применяется к колонке, и результат используется для выбора строк. Например, можно отфильтровать строки, где значение больше определённого числа. Эта операция возвращает новый DataFrame, содержащий только выбранные строки. Фильтрация очень полезна для очистки и анализа данных. В дата-инженерных пайплайнах фильтрация часто используется для удаления неверных или ненужных записей.",
+
+
+
+"What is GroupBy in pandas?":
+"Что такое GroupBy в pandas?",
+
+"GroupBy is a powerful operation used to group data based on column values. After grouping, aggregation functions such as sum, mean, or count can be applied. This allows developers to summarize large datasets quickly. GroupBy is similar to the GROUP BY operation in SQL. It is commonly used in data analysis and reporting. In data engineering, GroupBy can help create aggregated datasets for analytics.":
+"GroupBy — это мощная операция, которая используется для группировки данных по значениям колонок. После группировки можно применять агрегирующие функции, такие как sum, mean или count. Это позволяет быстро суммировать большие наборы данных. GroupBy похож на операцию GROUP BY в SQL. Он часто используется в анализе данных и отчётности. В дата-инженерии GroupBy помогает создавать агрегированные датасеты для аналитики.",
+
+
+
+"What is merge in pandas?":
+"Что такое merge в pandas?",
+
+"Merge is used to combine two DataFrames based on a common column or key. It works similarly to SQL joins. Pandas supports different types of joins such as inner join, left join, right join, and outer join. This operation allows data from different sources to be combined into one dataset. Merge is very important when working with relational data. In data engineering pipelines, merge operations are used frequently.":
+"Merge используется для объединения двух DataFrame по общей колонке или ключу. Он работает аналогично SQL join. Pandas поддерживает разные типы соединений, такие как inner join, left join, right join и outer join. Эта операция позволяет объединять данные из разных источников в один набор данных. Merge очень важен при работе с реляционными данными. В дата-инженерных пайплайнах операции merge используются очень часто.",
+
+
+
+"What does apply() do in pandas?":
+"Что делает функция apply() в pandas?",
+
+"The apply() function allows a custom function to be applied to rows or columns of a DataFrame. It is useful when built-in operations are not enough. Developers can define their own transformation logic. Apply can operate on each row or each column depending on the configuration. Although powerful, it can sometimes be slower than vectorized operations. In data engineering tasks, apply is used for complex transformations.":
+"Функция apply() позволяет применять пользовательскую функцию к строкам или колонкам DataFrame. Она полезна, когда встроенных операций недостаточно. Разработчики могут определить собственную логику преобразования. Apply может работать либо с каждой строкой, либо с каждой колонкой в зависимости от настроек. Хотя эта функция мощная, иногда она работает медленнее, чем векторизированные операции. В задачах дата-инженерии apply используется для сложных преобразований данных.",
+
+
+
+"How can you optimize pandas performance?":
+"Как оптимизировать производительность pandas?",
+
+"Pandas performance can be improved by using vectorized operations instead of loops. Vectorized operations are faster because they are implemented in optimized C code. Another technique is reducing memory usage by choosing correct data types. Developers can also process data in chunks when working with large datasets. Avoiding unnecessary copies of data can also improve performance. In large-scale data systems, these optimizations can significantly speed up processing.":
+"Производительность pandas можно улучшить, используя векторизированные операции вместо циклов. Векторизированные операции работают быстрее, потому что реализованы на оптимизированном C-коде. Другой способ — уменьшить использование памяти, выбирая правильные типы данных. Разработчики также могут обрабатывать данные по частям при работе с большими наборами данных. Избегание лишних копий данных тоже повышает производительность. В больших системах обработки данных такие оптимизации могут значительно ускорить работу."
+
+}
+}

@@ -11,7 +11,7 @@ python3 run.py import-json путь/к/файлу.json
 
 **Порции:** данные разбиты на порции. В приложении: кнопки «Сменить порцию» и «Следующая порция». Из консоли: `list-portions`, `set-portion <id>`, `next-portion`.
 
-**Аудио:** генерация через Google Cloud TTS: `python3 run.py generate-audio`. Результат: mp3 в `data/audio/` и HTML для телефона (`review_sentences.html`, `review_words.html`).
+**Аудио:** генерация через Google Cloud TTS: `python3 run.py generate-audio`. Результат: mp3 в `.../audio/` и один файл `review_*_ru.html` в той же папке с датой.
 
 **Тренажёр:** русское слово/предложение → ввод английского. Кнопка «Посмотреть ответ» — пункт не идёт в процент. Кнопка «Записать ошибку» — сохранить правильный и неправильный вариант в БД.
 

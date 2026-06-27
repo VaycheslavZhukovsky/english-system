@@ -1,0 +1,64 @@
+{
+"sentences": {
+"How do you define a function in Python?":
+"Как определить функцию в Python?",
+
+"A function in Python is defined using the def keyword followed by the function name and parentheses. Inside the parentheses we can define parameters if the function needs input data. The body of the function contains the code that will be executed when the function is called. Functions help organize code and make it reusable. Instead of writing the same logic multiple times, we can call the function whenever we need it. In data engineering, functions are often used to transform data, validate records, or perform reusable ETL operations.":
+"Функция в Python определяется с помощью ключевого слова def, за которым следует имя функции и круглые скобки. Внутри скобок можно указать параметры, если функции нужны входные данные. Тело функции содержит код, который будет выполняться при вызове функции. Функции помогают организовать код и делают его переиспользуемым. Вместо того чтобы писать одну и ту же логику много раз, можно вызывать функцию когда это нужно. В дата-инженерии функции часто используются для трансформации данных, проверки записей или выполнения повторяемых операций ETL.",
+
+
+
+"What are default arguments in Python functions?":
+"Что такое default arguments в функциях Python?",
+
+"Default arguments are parameters that have a predefined value. If the user does not provide a value when calling the function, Python uses the default value. This makes functions more flexible and easier to use. For example, a function can have a default parameter for a file path or a batch size. If the argument is not passed, the function will still work using the default configuration. In data engineering pipelines, default arguments are useful for configuration settings.":
+"Default arguments — это параметры, которые имеют заранее заданное значение. Если пользователь не передаёт значение при вызове функции, Python использует значение по умолчанию. Это делает функции более гибкими и удобными в использовании. Например, функция может иметь параметр по умолчанию для пути к файлу или размера батча. Если аргумент не передан, функция всё равно будет работать, используя стандартную конфигурацию. В дата-инженерных пайплайнах такие параметры часто используются для настроек.",
+
+
+
+"What is *args in Python?":
+"Что такое *args в Python?",
+
+"The *args parameter allows a function to accept a variable number of positional arguments. Instead of defining a fixed number of parameters, we can pass many values to the function. Inside the function, *args is treated as a tuple. This makes the function more flexible when we do not know the number of inputs in advance. It is useful when processing multiple values or datasets. In data engineering tasks, this can help when applying the same transformation to multiple columns or inputs.":
+"*args — это параметр, который позволяет функции принимать переменное количество позиционных аргументов. Вместо того чтобы определять фиксированное число параметров, можно передавать много значений в функцию. Внутри функции *args рассматривается как кортеж. Это делает функцию более гибкой, когда заранее неизвестно количество входных данных. Это полезно при обработке нескольких значений или наборов данных. В задачах дата-инженерии это может помочь применять одну и ту же трансформацию к нескольким колонкам или входам.",
+
+
+
+"What is **kwargs in Python?":
+"Что такое **kwargs в Python?",
+
+"The **kwargs parameter allows a function to accept a variable number of keyword arguments. These arguments are passed as key-value pairs and stored in a dictionary. This makes it possible to send many optional parameters to a function. The function can then access them using dictionary keys. This approach is very useful for flexible configurations. In data engineering, **kwargs is often used for passing optional parameters to data processing functions or pipeline configurations.":
+"**kwargs — это параметр, который позволяет функции принимать переменное количество именованных аргументов. Эти аргументы передаются как пары ключ-значение и сохраняются в словаре. Это позволяет передавать в функцию множество дополнительных параметров. Затем функция может обращаться к ним по ключам словаря. Такой подход очень полезен для гибкой конфигурации. В дата-инженерии **kwargs часто используется для передачи дополнительных параметров в функции обработки данных или настройки пайплайнов.",
+
+"What is a lambda function in Python?":
+"Что такое lambda функция в Python?",
+
+"A lambda function is a small anonymous function that can be defined in a single line. It is created using the lambda keyword followed by parameters and an expression. Lambda functions do not have a name like regular functions defined with def. They are often used for short and simple operations. For example, they are commonly used in functions like map(), filter(), or sorted(). In data engineering, lambda functions are useful for quick transformations of data.":
+"Lambda функция — это небольшая анонимная функция, которая может быть определена в одной строке. Она создаётся с помощью ключевого слова lambda, за которым следуют параметры и выражение. У lambda-функций нет имени, как у обычных функций, созданных с помощью def. Они часто используются для коротких и простых операций. Например, их часто применяют в функциях map(), filter() или sorted(). В дата-инженерии lambda функции полезны для быстрых трансформаций данных.",
+
+
+
+"What is a class in Python?":
+"Что такое class в Python?",
+
+"A class is a blueprint for creating objects. It defines the structure and behavior that objects created from it will have. A class can contain attributes, which store data, and methods, which define actions. Classes are a fundamental concept in object-oriented programming. They help organize code and model real-world entities. In data engineering, classes can be used to represent data processors, pipeline components, or configuration objects.":
+"Class — это шаблон для создания объектов. Он определяет структуру и поведение объектов, которые будут созданы на его основе. Класс может содержать атрибуты, которые хранят данные, и методы, которые определяют действия. Классы являются фундаментальной концепцией объектно-ориентированного программирования. Они помогают организовать код и моделировать реальные сущности. В дата-инженерии классы могут использоваться для представления обработчиков данных, компонентов пайплайна или конфигурационных объектов.",
+
+
+
+"What is inheritance in Python?":
+"Что такое inheritance в Python?",
+
+"Inheritance is a concept in object-oriented programming where one class can inherit properties and methods from another class. The class that inherits is called the child class, and the original class is called the parent class. This allows code reuse and reduces duplication. The child class can also add new features or modify existing behavior. Inheritance helps organize complex systems into hierarchical structures. In data engineering, it can be useful when building reusable pipeline components.":
+"Inheritance — это концепция объектно-ориентированного программирования, при которой один класс может наследовать свойства и методы другого класса. Класс, который наследует, называется дочерним классом, а исходный класс — родительским. Это позволяет переиспользовать код и уменьшать дублирование. Дочерний класс также может добавлять новые функции или изменять существующее поведение. Наследование помогает организовать сложные системы в иерархические структуры. В дата-инженерии это может быть полезно при создании переиспользуемых компонентов пайплайна.",
+
+
+
+"What is encapsulation in Python?":
+"Что такое encapsulation в Python?",
+
+"Encapsulation is the concept of hiding internal details of a class and controlling access to its data. This is usually done by using methods and restricting direct access to attributes. Python uses naming conventions such as a single underscore or double underscore to indicate protected or private variables. Encapsulation helps protect data from unintended modification. It also makes code easier to maintain and understand. In large data systems, encapsulation helps keep different parts of the pipeline independent.":
+"Encapsulation — это концепция сокрытия внутренних деталей класса и контроля доступа к его данным. Обычно это достигается с помощью методов и ограничения прямого доступа к атрибутам. В Python используются соглашения об именовании, такие как одинарное или двойное подчёркивание, чтобы обозначить защищённые или приватные переменные. Инкапсуляция помогает защитить данные от случайных изменений. Она также делает код более понятным и удобным для поддержки. В больших системах обработки данных инкапсуляция помогает разделять разные части пайплайна."
+
+}
+}

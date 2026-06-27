@@ -1,0 +1,51 @@
+{
+"sentences": {
+
+"What is a thread in Python?":
+"Что такое поток (thread) в Python?",
+
+"A thread is a smaller unit of a process that can run concurrently with other threads. Threads share the same memory space of the process. This allows them to communicate and exchange data easily. Threads are useful for tasks that involve waiting, such as network requests or reading files. However, Python has a limitation called the Global Interpreter Lock. Because of this, threads are not always efficient for CPU-heavy tasks. In data engineering, threads are often used for I/O operations.":
+"Поток — это меньшая единица процесса, которая может выполняться одновременно с другими потоками. Потоки используют одно и то же пространство памяти процесса. Это позволяет им легко обмениваться данными. Потоки полезны для задач, связанных с ожиданием, например сетевых запросов или чтения файлов. Однако в Python существует ограничение под названием Global Interpreter Lock. Поэтому потоки не всегда эффективны для задач с высокой нагрузкой на процессор. В дата-инженерии потоки часто используются для операций ввода-вывода.",
+
+
+
+"What is multiprocessing in Python?":
+"Что такое multiprocessing в Python?",
+
+"Multiprocessing is a technique that allows a program to run multiple processes in parallel. Each process has its own memory space and Python interpreter. This allows true parallel execution on multiple CPU cores. Multiprocessing is useful for CPU-intensive tasks such as heavy computations or data transformations. It avoids the limitations caused by the Global Interpreter Lock. In data engineering, multiprocessing can speed up data processing pipelines.":
+"Multiprocessing — это техника, которая позволяет программе выполнять несколько процессов параллельно. Каждый процесс имеет собственное пространство памяти и интерпретатор Python. Это позволяет выполнять настоящий параллелизм на нескольких ядрах процессора. Multiprocessing полезен для задач с высокой нагрузкой на процессор, например сложных вычислений или трансформаций данных. Он обходит ограничения Global Interpreter Lock. В дата-инженерии multiprocessing может ускорять обработку данных в пайплайнах.",
+
+
+
+"What is the Global Interpreter Lock in Python?":
+"Что такое Global Interpreter Lock в Python?",
+
+"The Global Interpreter Lock, or GIL, is a mechanism used in CPython to ensure that only one thread executes Python bytecode at a time. This simplifies memory management and prevents many concurrency issues. However, it also limits the performance of CPU-bound multithreaded programs. Because of the GIL, threads cannot fully utilize multiple CPU cores. For CPU-intensive tasks, multiprocessing is usually a better choice. Understanding the GIL is important when designing high-performance systems.":
+"Global Interpreter Lock, или GIL — это механизм в CPython, который гарантирует, что только один поток выполняет Python байткод в один момент времени. Это упрощает управление памятью и предотвращает многие проблемы параллелизма. Однако это также ограничивает производительность многопоточных программ с нагрузкой на процессор. Из-за GIL потоки не могут полностью использовать несколько ядер процессора. Для задач с высокой нагрузкой на процессор обычно лучше использовать multiprocessing. Понимание GIL важно при проектировании высокопроизводительных систем.",
+
+
+
+"When should you use multiprocessing?":
+"Когда следует использовать multiprocessing?",
+
+"Multiprocessing should be used for CPU-intensive tasks. These tasks require a lot of computation and can benefit from parallel execution on multiple cores. Examples include large data transformations, mathematical computations, and machine learning workloads. Since each process has its own Python interpreter, the GIL does not limit execution. This allows programs to fully use the CPU. In data engineering, multiprocessing can help speed up heavy batch data processing.":
+"Multiprocessing следует использовать для задач с высокой нагрузкой на процессор. Такие задачи требуют больших вычислений и могут выиграть от параллельного выполнения на нескольких ядрах. Примерами являются большие трансформации данных, математические вычисления и задачи машинного обучения. Поскольку каждый процесс имеет собственный интерпретатор Python, GIL не ограничивает выполнение. Это позволяет программе полностью использовать ресурсы процессора. В дата-инженерии multiprocessing может ускорять тяжёлую пакетную обработку данных.",
+
+
+
+"When should you use multithreading?":
+"Когда следует использовать multithreading?",
+
+"Multithreading should be used for I/O-bound tasks. These tasks spend a lot of time waiting for external resources such as network responses or disk operations. While one thread waits, another thread can continue working. This improves overall efficiency and responsiveness. Examples include downloading files, calling APIs, or reading data from databases. In data engineering pipelines, threads are often used for parallel data ingestion.":
+"Multithreading следует использовать для задач, связанных с вводом-выводом. Такие задачи часто ждут внешние ресурсы, например ответы сети или операции диска. Пока один поток ждёт, другой поток может продолжать работу. Это повышает общую эффективность и отзывчивость программы. Примерами являются загрузка файлов, вызовы API или чтение данных из баз данных. В дата-инженерных пайплайнах потоки часто используются для параллельной загрузки данных.",
+
+
+
+"Can you give an example of threading in Python?":
+"Можете привести пример использования потоков в Python?",
+
+"A simple example of threading is running multiple tasks at the same time. For example, a program might download several files simultaneously. Each download task can run in a separate thread. This allows the program to use waiting time efficiently. The threading module in Python provides tools for creating and managing threads. In real systems, threading is often used to improve the performance of network or file operations.":
+"Простой пример использования потоков — выполнение нескольких задач одновременно. Например, программа может скачивать несколько файлов одновременно. Каждая задача загрузки может выполняться в отдельном потоке. Это позволяет программе эффективно использовать время ожидания. Модуль threading в Python предоставляет инструменты для создания и управления потоками. В реальных системах потоки часто используются для повышения производительности сетевых или файловых операций."
+
+}
+}

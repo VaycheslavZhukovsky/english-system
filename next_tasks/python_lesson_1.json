@@ -1,0 +1,40 @@
+{
+"sentences": {
+
+"What is slicing in Python?":
+"Что такое slicing в Python?",
+
+"Slicing is a technique used to extract a portion of a sequence such as a list, tuple, or string. It allows us to access a range of elements using index positions. The basic syntax is sequence[start:end]. The start index is included, but the end index is not included. We can also use a step parameter to skip elements. Slicing is very useful when we need to process or transform subsets of data in data pipelines.":
+"Slicing — это техника, которая используется для извлечения части последовательности, например списка, кортежа или строки. Она позволяет получить диапазон элементов по индексам. Базовый синтаксис выглядит так: sequence[start:end]. Начальный индекс включается, а конечный индекс не включается. Мы также можем использовать параметр шага, чтобы пропускать элементы. Slicing очень полезен, когда нужно обрабатывать или трансформировать части данных в дата-пайплайнах.",
+
+
+"What does the len() function do in Python?":
+"Что делает функция len() в Python?",
+
+"The len() function returns the number of elements in a collection. It can be used with lists, tuples, strings, dictionaries, and many other data structures. For example, if a list contains five elements, len() will return the value five. This function is very useful when working with loops or validating data sizes. In data engineering, it can help check dataset sizes or verify the number of records. It is a simple but very frequently used function in Python.":
+"Функция len() возвращает количество элементов в коллекции. Она может использоваться со списками, кортежами, строками, словарями и многими другими структурами данных. Например, если список содержит пять элементов, len() вернёт значение пять. Эта функция очень полезна при работе с циклами или проверке размеров данных. В дата-инженерии она может помочь проверить размер датасета или количество записей. Это простая, но очень часто используемая функция в Python.",
+
+
+"What does enumerate() do in Python?":
+"Что делает enumerate() в Python?",
+
+"The enumerate() function is used to loop over a sequence and get both the index and the value at the same time. It returns pairs of index and element. This is very useful when we need to know the position of an item while iterating. Without enumerate(), we would need to manually track the index using a counter variable. Using enumerate() makes the code cleaner and more readable. It is commonly used in data processing tasks and loops.":
+"Функция enumerate() используется для перебора последовательности и получения одновременно индекса и значения. Она возвращает пары: индекс и элемент. Это очень полезно, когда нужно знать позицию элемента во время итерации. Без enumerate() пришлось бы вручную отслеживать индекс с помощью счётчика. Использование enumerate() делает код более чистым и читаемым. Она часто используется при обработке данных и в циклах.",
+
+
+"What does zip() do in Python?":
+"Что делает zip() в Python?",
+
+"The zip() function combines multiple sequences into a single iterator of tuples. Each tuple contains elements from the same position in the original sequences. For example, if we have two lists, zip() can combine their elements pair by pair. This function is very useful when working with related datasets. It allows us to iterate over multiple lists at the same time. In data engineering, it can help when combining columns or synchronizing data from different sources.":
+"Функция zip() объединяет несколько последовательностей в один итератор кортежей. Каждый кортеж содержит элементы с одинаковой позиции из исходных последовательностей. Например, если есть два списка, zip() может объединить их элементы по парам. Эта функция очень полезна при работе со связанными наборами данных. Она позволяет одновременно итерироваться по нескольким спискам. В дата-инженерии она может помочь при объединении колонок или синхронизации данных из разных источников.",
+
+
+"What is the pass statement in Python?":
+"Что такое оператор pass в Python?",
+
+
+"The pass statement is a placeholder that does nothing. It is used when a statement is syntactically required but no action is needed. For example, we can use pass inside a function, loop, or class that we plan to implement later. This helps avoid syntax errors while developing code. Pass is often used during early development or when designing program structure. It allows developers to write incomplete code without breaking the program.":
+"Оператор pass — это заглушка, которая ничего не делает. Он используется, когда синтаксически требуется инструкция, но выполнять никаких действий не нужно. Например, pass можно использовать внутри функции, цикла или класса, который планируется реализовать позже. Это помогает избежать синтаксических ошибок во время разработки. Pass часто используется на ранних этапах разработки или при проектировании структуры программы. Он позволяет писать незавершённый код, не ломая программу."
+
+}
+}

@@ -24,7 +24,12 @@ from app.db import (
     create_next_portion,
     DB_PATH,
 )
-from app.audio_gen import generate_words_audio, generate_sentences_audio, write_review_html
+from app.audio_gen import (
+    audio_session_date_slug,
+    generate_words_audio,
+    generate_sentences_audio,
+    write_review_html_ru,
+)
 from app.prep_prompt import extract_json_from_text
 
 
@@ -137,6 +142,7 @@ def cmd_generate_audio():
     portion_id = get_current_portion_id()
     data_dir = DB_PATH.parent
     audio_base = data_dir / "audio"
+    slug = audio_session_date_slug()
     print("1 — Слова\n2 — Предложения\n")
     try:
         choice = input("Слова или предложения? [1/2]: ").strip() or "1"
@@ -144,25 +150,40 @@ def cmd_generate_audio():
         choice = "1"
     if choice == "2":
         items = get_weekly_sentences(portion_id)
-        out_dir = audio_base / "sentences"
+        session_dir = audio_base / f"sentences_{slug}"
+        out_dir = session_dir / "audio"
         if not items:
             print("В текущей порции нет предложений.")
             return
         print("Генерация аудио (Google Cloud TTS, 5 сек тишины)...")
         paths = generate_sentences_audio(items, out_dir)
-        write_review_html(items, audio_base / "review_sentences.html", "Предложения")
+        write_review_html_ru(
+            items,
+            session_dir / f"review_sentences_{slug}_ru.html",
+            "Предложения (русский → английский)",
+        )
     else:
         items = get_weekly_words(portion_id)
-        out_dir = audio_base / "words"
+        session_dir = audio_base / f"words_{slug}"
+        out_dir = session_dir / "audio"
         if not items:
             print("В текущей порции нет слов.")
             return
         print("Генерация аудио (Google Cloud TTS, 5 сек тишины)...")
         paths = generate_words_audio(items, out_dir)
-        write_review_html(items, audio_base / "review_words.html", "Слова")
-    if paths:
-        print(f"Готово: {len(paths)} файлов. Папка: {out_dir}")
-        print("HTML для телефона:", audio_base / ("review_sentences.html" if choice == "2" else "review_words.html"))
+        write_review_html_ru(
+            items,
+            session_dir / f"review_words_{slug}_ru.html",
+            "Слова (русский → английский)",
+        )
+    n_ok = sum(1 for p in paths if p)
+    if n_ok:
+        print(f"Готово: {n_ok} аудиофайлов. Папка сессии: {session_dir}")
+        print("  mp3:", out_dir)
+        if choice == "2":
+            print("  HTML:", session_dir / f"review_sentences_{slug}_ru.html")
+        else:
+            print("  HTML:", session_dir / f"review_words_{slug}_ru.html")
     else:
         print("Не удалось сгенерировать аудио (Google Cloud TTS: настройте учётную запись и google-cloud-texttospeech).")
 

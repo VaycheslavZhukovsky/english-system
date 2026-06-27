@@ -14,10 +14,10 @@ python3 run.py app
 ```bash
 python3 run.py                    # меню
 python3 run.py app                # открыть приложение
+python3 run.py next-portion       # создать новую порцию и переключиться на неё
 python3 run.py import-json file.json   # добавить слова/предложения из JSON в текущую порцию
 python3 run.py list-portions      # список порций (id, предложений, слов)
 python3 run.py set-portion <id>   # переключиться на порцию
-python3 run.py next-portion       # создать новую порцию и переключиться на неё
 python3 run.py generate-audio    # сгенерировать аудио + HTML для телефона (текущая порция)
 ```
 
@@ -37,7 +37,7 @@ python3 run.py generate-audio    # сгенерировать аудио + HTML 
 
 ## Генерация аудио
 
-Аудио создаётся через **Google Cloud Text-to-Speech** (американский английский, голос en-US-Wavenet-D), к каждой записи добавляется 5 сек тишины. Нужны: учётная запись Google Cloud, включённый API Text-to-Speech, `pip install google-cloud-texttospeech`, переменная окружения `GOOGLE_APPLICATION_CREDENTIALS` с путём к ключу сервисного аккаунта. HTML для просмотра на телефоне (EN + кнопка «Показать перевод») пишется в `data/audio/review_sentences.html` и `review_words.html`.
+Аудио создаётся через **Google Cloud Text-to-Speech** (американский английский, голос en-US-Wavenet-D), к каждой записи добавляется 5 сек тишины. Нужны: учётная запись Google Cloud, включённый API Text-to-Speech, `pip install google-cloud-texttospeech`, переменная окружения `GOOGLE_APPLICATION_CREDENTIALS` с путём к ключу сервисного аккаунта. Результат: `data/audio/sentences_DD_MM_YY/audio/*.mp3` и один HTML `review_sentences_DD_MM_YY_ru.html` (тот же шаблон, что рабочий пример RU→EN). Для слов — `data/audio/words_DD_MM_YY/` и `review_words_DD_MM_YY_ru.html`.
 
 См. [app/README.md](app/README.md).
 

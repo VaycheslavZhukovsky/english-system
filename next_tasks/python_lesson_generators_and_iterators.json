@@ -1,0 +1,67 @@
+{
+"sentences": {
+
+"What is an iterator in Python?":
+"Что такое iterator в Python?",
+
+"An iterator is an object that allows us to iterate through elements of a collection one by one. It implements two important methods: __iter__() and __next__(). The __iter__() method returns the iterator object itself, while __next__() returns the next element. When there are no more elements, Python raises a StopIteration exception. Iterators are used internally by loops such as the for loop. In data engineering, iterators are useful for processing large datasets step by step without loading everything into memory.":
+"Iterator — это объект, который позволяет проходить по элементам коллекции по одному. Он реализует два важных метода: __iter__() и __next__(). Метод __iter__() возвращает сам объект итератора, а __next__() возвращает следующий элемент. Когда элементы заканчиваются, Python вызывает исключение StopIteration. Итераторы используются внутри циклов, таких как for. В дата-инженерии итераторы полезны для обработки больших наборов данных шаг за шагом без загрузки всего в память.",
+
+
+
+"What is a generator in Python?":
+"Что такое generator в Python?",
+
+"A generator is a special type of iterator that produces values one at a time. It is created using a function that contains the yield keyword. Unlike regular functions, generators do not return all results at once. Instead, they pause their execution after each yield and resume when the next value is requested. This makes them very memory efficient. In data engineering, generators are commonly used when processing large data streams or building data pipelines.":
+"Generator — это особый тип итератора, который создаёт значения по одному. Он создаётся с помощью функции, содержащей ключевое слово yield. В отличие от обычных функций, генераторы не возвращают все результаты сразу. Вместо этого они приостанавливают выполнение после каждого yield и продолжают работу, когда запрашивается следующее значение. Это делает их очень эффективными по памяти. В дата-инженерии генераторы часто используются при обработке потоков данных или построении пайплайнов.",
+
+
+
+"Can you give an example of a generator in Python?":
+"Можете привести пример генератора в Python?",
+
+"A common example of a generator is a function that yields numbers one by one. For example, we can create a function that generates numbers from one to ten. Inside the function we use the yield keyword instead of return. Each time the generator is called, it returns the next number. The function pauses after each yield and continues from the same point later. This behavior is useful when processing sequences of data.":
+"Распространённый пример генератора — это функция, которая возвращает числа по одному. Например, можно создать функцию, которая генерирует числа от одного до десяти. Внутри функции используется ключевое слово yield вместо return. Каждый раз при вызове генератора возвращается следующее число. Функция приостанавливается после каждого yield и продолжает работу с того же места позже. Такое поведение полезно при обработке последовательностей данных.",
+
+
+
+"What are the advantages of generators in Python?":
+"Какие преимущества у генераторов в Python?",
+
+"The main advantage of generators is memory efficiency. They do not store all data in memory at once. Instead, they generate values only when needed. This approach is called lazy evaluation. Generators are very useful when working with large datasets or data streams. They can significantly reduce memory usage. In data engineering, this allows processing huge files or logs without loading everything into memory.":
+"Главное преимущество генераторов — эффективное использование памяти. Они не хранят все данные сразу в памяти. Вместо этого они создают значения только тогда, когда они нужны. Такой подход называется ленивыми вычислениями. Генераторы очень полезны при работе с большими наборами данных или потоками данных. Они могут значительно снизить использование памяти. В дата-инженерии это позволяет обрабатывать огромные файлы или логи без загрузки всего в память.",
+
+
+
+"What does the yield keyword do in Python?":
+"Что делает ключевое слово yield в Python?",
+
+"The yield keyword is used inside a function to create a generator. Instead of returning a value and stopping the function, yield returns a value and pauses the function execution. When the generator is called again, the function continues from the same point. This allows values to be produced one at a time. The function keeps its state between calls. This behavior makes generators very efficient for sequential data processing.":
+"Ключевое слово yield используется внутри функции для создания генератора. Вместо того чтобы вернуть значение и завершить функцию, yield возвращает значение и приостанавливает выполнение функции. Когда генератор вызывается снова, функция продолжает работу с того же места. Это позволяет создавать значения по одному. Функция сохраняет своё состояние между вызовами. Такое поведение делает генераторы очень эффективными для последовательной обработки данных.",
+
+
+
+"What is a generator expression in Python?":
+"Что такое generator expression в Python?",
+
+"A generator expression is a compact way to create a generator. It looks similar to list comprehension but uses parentheses instead of square brackets. Instead of creating a full list in memory, it generates items one by one. This makes it more memory efficient. Generator expressions are useful when working with large data sequences. They are often used in data processing pipelines.":
+"Generator expression — это компактный способ создания генератора. Он выглядит похоже на list comprehension, но использует круглые скобки вместо квадратных. Вместо создания полного списка в памяти элементы генерируются по одному. Это делает его более эффективным по памяти. Generator expression полезен при работе с большими последовательностями данных. Он часто используется в пайплайнах обработки данных.",
+
+
+
+"When should you use generators in Python?":
+"Когда следует использовать генераторы в Python?",
+
+"Generators should be used when working with large datasets or streams of data. They are useful when it is not necessary to store all values in memory. Instead, values can be processed one by one. This helps reduce memory consumption and improve performance. Generators are commonly used in pipelines, file processing, and streaming systems. In data engineering, they are especially helpful when processing logs or large files.":
+"Генераторы следует использовать при работе с большими наборами данных или потоками данных. Они полезны, когда нет необходимости хранить все значения в памяти. Вместо этого значения можно обрабатывать по одному. Это помогает снизить потребление памяти и повысить производительность. Генераторы часто используются в пайплайнах, обработке файлов и потоковых системах. В дата-инженерии они особенно полезны при обработке логов или больших файлов.",
+
+
+
+"How can generators be used to read a large file in Python?":
+"Как можно использовать генераторы для чтения большого файла в Python?",
+
+"Generators can read a file line by line instead of loading the entire file into memory. This is done by yielding each line from the file. The program processes one line at a time. This approach is very efficient for large files such as logs or datasets. It prevents memory overflow and improves performance. In data engineering pipelines, this technique is commonly used when processing very large data files.":
+"Генераторы могут читать файл построчно вместо загрузки всего файла в память. Это делается с помощью yield для каждой строки файла. Программа обрабатывает одну строку за раз. Такой подход очень эффективен для больших файлов, например логов или датасетов. Он предотвращает переполнение памяти и повышает производительность. В дата-инженерных пайплайнах эта техника часто используется при обработке очень больших файлов."
+
+}
+}

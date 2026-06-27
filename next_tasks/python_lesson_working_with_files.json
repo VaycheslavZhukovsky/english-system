@@ -1,0 +1,43 @@
+{
+"sentences": {
+
+"How do you open a file in Python?":
+"Как открыть файл в Python?",
+
+"In Python, a file is opened using the built-in open() function. This function takes the file path and the mode as arguments. The mode defines how the file will be used, for example reading or writing. After opening the file, we can read or write data to it. When the work with the file is finished, it should be closed using the close() method. Proper file handling is important when working with data pipelines and large datasets.":
+"В Python файл открывается с помощью встроенной функции open(). Эта функция принимает путь к файлу и режим работы в качестве аргументов. Режим определяет, как файл будет использоваться, например для чтения или записи. После открытия файла можно читать из него данные или записывать их. Когда работа с файлом завершена, его следует закрыть с помощью метода close(). Правильная работа с файлами важна при работе с дата-пайплайнами и большими наборами данных.",
+
+
+
+"What is the best way to work with files in Python?":
+"Какой лучший способ работать с файлами в Python?",
+
+"The best way to work with files in Python is by using the with statement. This approach is called a context manager. It automatically handles opening and closing the file. Even if an error occurs, the file will still be properly closed. This makes the code safer and cleaner. In data engineering, using context managers is considered best practice when working with files.":
+"Лучший способ работать с файлами в Python — использовать оператор with. Такой подход называется контекстным менеджером. Он автоматически управляет открытием и закрытием файла. Даже если произойдёт ошибка, файл всё равно будет корректно закрыт. Это делает код более безопасным и чистым. В дата-инженерии использование контекстных менеджеров считается лучшей практикой при работе с файлами.",
+
+
+
+"What are the common file modes in Python?":
+"Какие существуют основные режимы работы с файлами в Python?",
+
+"Python provides several file modes when opening files. The most common mode is 'r', which means reading a file. The 'w' mode is used for writing and will overwrite the existing file. The 'a' mode is used for appending data to the end of a file. There is also the 'b' mode for working with binary files. Choosing the correct mode is important when building data processing systems.":
+"Python предоставляет несколько режимов работы с файлами. Самый распространённый режим — 'r', который означает чтение файла. Режим 'w' используется для записи и перезаписывает существующий файл. Режим 'a' используется для добавления данных в конец файла. Также существует режим 'b' для работы с бинарными файлами. Выбор правильного режима важен при построении систем обработки данных.",
+
+
+
+"How do you read a file line by line in Python?":
+"Как читать файл построчно в Python?",
+
+"A file can be read line by line using a loop. When a file object is used in a for loop, Python automatically reads one line at a time. This method is very memory efficient because it does not load the entire file into memory. It is especially useful when working with very large files. Each line can be processed individually as it is read. This approach is widely used in data engineering when processing logs or large datasets.":
+"Файл можно читать построчно с помощью цикла. Когда объект файла используется в цикле for, Python автоматически читает по одной строке за раз. Этот метод очень эффективен по памяти, потому что не загружает весь файл в память. Он особенно полезен при работе с очень большими файлами. Каждая строка может обрабатываться отдельно по мере чтения. Такой подход широко используется в дата-инженерии при обработке логов или больших датасетов.",
+
+
+
+"How do you read JSON data in Python?":
+"Как читать JSON данные в Python?",
+
+"JSON data can be read in Python using the built-in json module. First, the file is opened using the open() function. Then the json.load() function is used to parse the JSON data into a Python dictionary. This allows the program to easily access keys and values. JSON is a very common format for data exchange in modern systems. In data engineering, JSON is often used when working with APIs, logs, and configuration files.":
+"JSON данные можно читать в Python с помощью встроенного модуля json. Сначала файл открывается с помощью функции open(). Затем используется функция json.load(), чтобы преобразовать JSON данные в словарь Python. Это позволяет программе легко получать доступ к ключам и значениям. JSON является очень распространённым форматом обмена данными в современных системах. В дата-инженерии JSON часто используется при работе с API, логами и конфигурационными файлами."
+
+}
+}

@@ -34,7 +34,7 @@ python run.py                  # меню команд
 - `pip install google-cloud-texttospeech`
 - Переменная окружения `GOOGLE_APPLICATION_CREDENTIALS` с путём к JSON-ключу сервисного аккаунта
 
-HTML для телефона: `data/audio/review_sentences.html`, `data/audio/review_words.html`.
+HTML и mp3: `data/audio/sentences_DD_MM_YY/` или `words_DD_MM_YY/` — подпапка `audio/` с mp3 и `review_*_DD_MM_YY_ru.html`.
 
 ## Звуки таймера
 
